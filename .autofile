@@ -1,0 +1,3 @@
+::ASYNC
+- npm run watch
+- php artisan serve
