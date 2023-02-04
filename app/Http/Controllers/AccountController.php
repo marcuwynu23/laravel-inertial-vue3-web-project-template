@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\DailyLog;
 use Illuminate\Http\Request;
 
 class AccountController extends Controller
@@ -14,7 +15,7 @@ class AccountController extends Controller
     public function index()
     {
         //
-        return inertia("Account/Account");
+
     }
 
     /**
@@ -25,6 +26,7 @@ class AccountController extends Controller
     public function create()
     {
         //
+        return inertia("Account/CreateAccount");
     }
 
     /**
@@ -36,6 +38,7 @@ class AccountController extends Controller
     public function store(Request $request)
     {
         //
+        return redirect()->route("account.show");
     }
 
     /**
@@ -46,7 +49,10 @@ class AccountController extends Controller
      */
     public function show($id)
     {
-        //
+        $account = DailyLog::find($id);
+        return inertia("Account/Account", [
+            "account" => $account
+        ]);
     }
 
     /**
@@ -58,6 +64,8 @@ class AccountController extends Controller
     public function edit($id)
     {
         //
+
+        return inertia("Account/EditAccount");
     }
 
     /**

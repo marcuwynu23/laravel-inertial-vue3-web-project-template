@@ -11,16 +11,16 @@ class ActivityController extends Controller
 
     public function index()
     {
-        $activityLogs = DailyLog::all();
-        return inertia("Activity/ActivityLog", [
-            "activityLogs" => $activityLogs
+        $activities = DailyLog::all();
+        return inertia("Activity/Activities", [
+            "activities" => $activities
         ]);
     }
 
 
     public function create()
     {
-        return inertia("Activity/ActivityCreateForm");
+        return inertia("Activity/ActivityCreate");
     }
 
     public function store(Request $request)
@@ -38,7 +38,7 @@ class ActivityController extends Controller
 
     public function edit($id)
     {
-        return inertia("Activity/ActivityEditForm", [
+        return inertia("Activity/ActivityEdit", [
             "data" => DailyLog::find($id)
         ]);
     }

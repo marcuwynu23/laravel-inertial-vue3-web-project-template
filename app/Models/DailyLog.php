@@ -15,4 +15,7 @@ class DailyLog extends Model
         "accomplishment",
         "remarks"
     ];
+    protected $casts = [
+        'time' => 'date:h:m a'
+    ];
 }

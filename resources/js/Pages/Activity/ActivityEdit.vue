@@ -2,7 +2,6 @@
  *   Copyright (c) 2023 
  *   All rights reserved.
  */
-
 <script setup>
 
 import { Inertia } from '@inertiajs/inertia';
@@ -35,7 +34,7 @@ const update = () => {
 
 <template>
 	<Layout>
-		<h1> Edit Activity Form</h1>
+		<h1 class="display-7 fw-bold"> <i class="fas fa-biking"></i> Edit Activity Form</h1>
 		<section>
 			<div class="activity-form-container">
 				<form @submit.prevent="update">

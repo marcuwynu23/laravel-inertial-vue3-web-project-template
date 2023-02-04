@@ -11,12 +11,14 @@ import { Link } from "@inertiajs/inertia-vue3";
 	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
 		<a class="navbar-brand"
 			href="#">
-			<img class="rounded-circle"
-				style="width: 40px; height: 40px;"
-				src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fis3-ssl.mzstatic.com%2Fimage%2Fthumb%2FPurple69%2Fv4%2F0a%2Ff1%2F56%2F0af156bf-4229-1829-bbf5-b4512d0008ef%2Fsource%2F512x512bb.jpg&f=1&nofb=1&ipt=bbcc22f7899993b0d6ae8b1ee6f1c65219af95377ec3b126b1797857e6fda7cc&ipo=images"
+			<img class="rounded-circle m-3"
+				style="width: 50px; height: 50px;"
+				src="https://assets.perfectdomain.com/_domainphoto/6/3/4/a/634a84b4f85712547e41b390f39232d2.jpg"
 				alt="Logo">
 		</a>
-
+		<span class="navbar-brand">
+			<h1 class="display-6 fw-bold">IT Internship Log</h1>
+		</span>
 		<button class="navbar-toggler"
 			type="button"
 			data-toggle="collapse"
@@ -32,31 +34,32 @@ import { Link } from "@inertiajs/inertia-vue3";
 				<li class="nav-item">
 					<Link class="nav-link"
 						:href="route('activity.index')">
-					Activity Logs
+					<i class="fas fa-list m-1"></i> Activities
 					</Link>
 				</li>
 				<li class="nav-item">
 					<Link class="nav-link"
 						:href="route('activity.create')">
-					Activity Form
+					<i class="fas fa-plus m-1"></i> Activity Form
 					</Link>
 				</li>
 				<li class="nav-item">
 					<Link class="nav-link"
-						:href="route('account.index')">
-					Account
+						:href="route('account.show', -1)">
+					<i class="fas fa-user m-1"> </i> Account
 					</Link>
 				</li>
 				<li class="nav-item">
 					<Link class="nav-link"
 						:href="route('help.index')">
-					Help
+					<i class="fas fa-question-circle m-1"></i> Help
 					</Link>
 				</li>
 				<li class="nav-item">
 					<Link class="nav-link"
 						:href="route('about.index')">
-					About</Link>
+					<i class="fas fa-info-circle m-1"></i>About
+					</Link>
 				</li>
 			</ul>
 		</div>

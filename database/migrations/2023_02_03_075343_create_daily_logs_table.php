@@ -13,7 +13,6 @@ class CreateDailyLogsTable extends Migration
      */
     public function up()
     {
-
         Schema::create('daily_logs', function (Blueprint $table) {
             $table->id();
             $table->date('date');

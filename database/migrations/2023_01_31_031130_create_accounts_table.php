@@ -15,9 +15,12 @@ class CreateAccountsTable extends Migration
     {
         Schema::create('accounts', function (Blueprint $table) {
             $table->id();
-            $table->string("first_name");
-            $table->string("middle_name");
-            $table->string("last_name");
+            $table->string("first_name")->nullable();
+            $table->string("middle_name")->nullable();
+            $table->string("last_name")->nullable();
+            $table->string("username")->nullable();
+            $table->string("email")->nullable();
+            $table->string("password")->nullable();
             $table->softDeletes();
             $table->timestamps();
         });

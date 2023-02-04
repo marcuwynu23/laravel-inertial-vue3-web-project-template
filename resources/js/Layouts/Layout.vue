@@ -11,10 +11,11 @@ import NavigationBar from '../Layouts/NavigationBar.vue';
 
 <template>
 	<header>
+
 		<NavigationBar />
 	</header>
 	<main>
-		<div class="container card mt-3">
+		<div class="container card mt-3 p-3">
 			<slot />
 		</div>
 	</main>

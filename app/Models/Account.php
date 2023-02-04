@@ -11,6 +11,9 @@ class Account extends Model
         "id",
         "first_name",
         "middle_name",
-        "last_name"
+        "last_name",
+        "username",
+        "email",
+        "password"
     ];
 }

@@ -22,7 +22,7 @@ function submit() {
 </script>
 <template>
 	<Layout>
-		<h1>Activity Form</h1>
+		<h1 class="display-6 fw-bold"> <i class="fas fa-biking"></i> Activity Form</h1>
 		<section>
 			<div class="activity-form-container">
 				<form @submit.prevent="submit">
